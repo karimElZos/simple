@@ -1,0 +1,409 @@
+/*Extra Small Screens  */
+
+@media screen and (max-width:576px) {
+    
+    
+/* styling of nav-bar */
+    nav{
+        background-color: black !important;
+        
+    }
+
+
+
+
+/* styling of header */
+
+        
+    .home .carousel .carousel-inner .overlay .caption h1{
+
+        font-size: 2.2rem;
+    } 
+
+
+    .home .carousel .carousel-inner .overlay .caption h4{
+        
+        font-size: .9rem;
+        font-weight: 500;
+    }
+
+    .home  .carousel .next , .home  .carousel .prev{
+        opacity: 0;
+    }
+
+
+/*styling of what-we-are  */
+
+    .who-we-are p{
+        
+        font-size: .85rem;
+        padding: 0 !important;
+        width: 100% !important;
+        
+        margin-bottom: 50px !important;
+        
+    }
+    
+
+    
+/* styling of creative team  */
+
+
+.team{
+    margin-top: 40px;
+    
+}
+
+
+.titles h2{
+    color: #eee;
+    font-size: 4rem;  
+}
+
+.titles h2::after {
+    font-size: 2rem;  
+}
+
+
+
+.titles h5{
+    font-size: 1rem;
+    
+}
+    
+
+/*styling of what-we-do  */
+
+    .what-we-do .titles h2{
+        
+        font-size: 3rem;
+        width: 100%;
+        justify-content: center;
+        
+        
+        
+        
+    }
+
+    .what-we-do .titles h2::after {
+        
+        font-size: 1.9rem;
+        left: unset !important;
+        
+        }
+
+    .what-we-do .titles p{
+        padding-right: 0 !important; 
+        text-align: center;
+        font-size: .95rem;
+        line-height: 1.7;
+    }
+
+
+
+/* styling of prices */
+
+    .prices .best-val {
+    
+        transform: scale(1.0) !important;
+    }
+
+
+
+
+/* style of testimonial  */
+
+    
+    .testimonial .carousel-inner {
+
+        padding: 70px 0 0 0 !important;
+        width: 100% !important;
+        
+    }
+
+    .testimonial .carousel-inner .carousel-item img{
+        display: inline-block !important;
+        width: 40%;
+        border-radius: 50%;
+        transform: translateY(-50%);
+    }
+
+
+
+
+/* styling of contact-us */
+    .contact-us .inputs{
+        padding:70px 0px  ;
+    }
+
+
+}
+
+/*********************************************************************************************/
+
+/* Small Screens */
+@media screen and (min-width:577px) and (max-width:768px) {
+
+    
+    
+/* styling of nav-bar */
+    nav{
+        background-color: black !important;
+        
+    }
+    
+
+    
+/* styling of header */
+
+        
+    .home .carousel .carousel-inner .overlay .caption h1{
+
+        font-size: 4rem;
+    } 
+
+
+    .home .carousel .carousel-inner .overlay .caption h4{
+        
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    
+
+/*styling of what-we-are  */
+
+    .who-we-are p{
+            
+        font-size: 1rem;
+        padding: 0 !important;
+        width: 86% !important;
+        margin-bottom: 50px !important;
+        
+    }
+
+
+
+/* styling of creative team  */
+
+    .team{
+        margin-top: 40px;
+
+    }
+
+
+
+/*styling of what-we-do  */
+
+     .what-we-do .titles{
+        text-align: center ;
+    }
+
+        
+    .what-we-do .titles h2{
+        
+        font-size: 3rem;
+        width: 100%;
+        justify-content: center;
+        
+    }
+
+    .what-we-do .titles h2::after {
+        
+        font-size: 2rem;
+        right:0;
+        }
+
+    .what-we-do .titles p{
+        padding-right: 0 !important;
+        width: 100% !important;
+        text-align: center;
+        font-size: .9rem;
+        line-height:1.9;
+        
+       
+    }
+
+
+
+    
+/* styling of prices */
+
+    .prices .best-val {
+    
+        transform: scale(1.0) !important;
+    }
+
+/* style of testimonial  */
+
+    
+    .testimonial .carousel-inner {
+
+        padding: 70px 0 0 0 !important;
+        width: 100% !important;
+        
+    }
+
+    .testimonial .carousel-inner .carousel-item img{
+        
+        width: 25%;
+       
+    }
+
+
+/* styling of contact-us */
+    .contact-us .inputs{
+        padding:70px 0px  ;
+    }
+
+}
+
+
+
+/*********************************************************************************************/
+
+
+/* Medium Screens */
+@media screen and (min-width:769px) and (max-width:992px) {
+    
+    
+    
+/* styling of nav-bar */
+
+    nav{
+        background-color: black !important;
+        
+    }
+
+
+       
+/* styling of header */
+
+        
+    .home .carousel .carousel-inner .overlay .caption h1{
+
+        font-size: 4rem;
+    } 
+
+
+
+/*styling of what-we-are  */
+
+    .who-we-are p{
+            
+        font-size: 1rem;
+        padding: 0 !important;
+        width: 100% !important;
+        margin-bottom: 50px !important;
+        
+    }
+
+
+
+/* styling of creative team  */
+
+    .team{
+        margin-top: 40px;
+
+    }
+
+
+/*styling of what-we-do  */
+
+     .what-we-do .titles{
+      
+        
+        text-align: center ;
+    
+    }
+
+        
+    .what-we-do .titles h2{
+        
+        font-size: 3rem;
+        width: 100%;
+        
+        justify-content: center;
+        
+    }
+
+    .what-we-do .titles h2::after {
+        
+        font-size: 2rem;
+        right:0;
+        }
+
+    .what-we-do .titles p{
+        padding-right: 0 !important; 
+        font-size: .9rem;    
+    }
+
+
+    
+/* styling of prices */
+
+    .prices .best-val {
+    
+        transform: scale(1) !important;
+        
+        
+    }
+
+
+/* style of testimonial  */
+
+    
+    .testimonial .carousel-inner {
+
+        padding: 70px 0 0 0 !important;
+        width: 100% !important;
+        
+    }
+
+    .testimonial .carousel-inner .carousel-item img{
+        
+        width: 20%;
+    
+    }
+
+
+
+/* styling of contact-us */
+    .contact-us .inputs{
+        padding:70px 0px  ;
+    }
+
+}
+
+
+
+/*********************************************************************************************/
+
+
+/* Large Screens */
+@media screen and (min-width:993px) and (max-width:1200px) {
+    /*styling of what-we-are  */
+
+    .who-we-are p{
+        
+        font-size: 1rem;
+        padding: 0 !important;
+        width: 100% !important;
+        margin-bottom: 50px !important;
+        
+    }
+
+
+
+}
+
+
+
+/*********************************************************************************************/
+
+
+
+/* Extra large Screens */
+@media screen and (min-width:1201px){
+    
+}

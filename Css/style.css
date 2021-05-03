@@ -1,0 +1,786 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+body{
+    /* height: 5000px; */
+
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav-bar styling */
+nav{
+    background-color: black !important;
+    position: relative;
+}
+
+
+nav::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #49677c;
+
+}
+
+
+nav div a img{
+    width: 55%;
+}
+/* 
+nav div ul{
+    margin-left:100px ;
+} */
+
+nav div ul li {
+    margin-left:20px ;
+    font-size:.82rem ;  
+    
+}
+
+nav div ul li a{
+    color: #fff !important;
+    font-weight: 600;
+    transition: color .5s;
+}
+
+nav div ul li a:hover{
+    color: red !important;
+}
+
+
+
+nav .social-media{
+    width: 20px;
+    height: 100% !important;
+   
+}
+
+
+nav .social-media a{
+    text-decoration: none;
+    color: white;
+}
+
+nav .social-media a .facebook , nav .social-media a .twitter , nav .social-media a .instagram {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: background-color 1s;
+}
+
+nav .social-media a:hover .facebook
+{
+    background-color: blue;
+    
+}
+
+nav .social-media a:hover .twitter
+{
+    background-color: rgb(255, 0, 128);
+    
+}
+
+nav .social-media a:hover .instagram
+{
+    background-color: rgb(21, 255, 0);
+    
+}
+
+
+
+/* 
+nav .social-media::before{
+    content: "ffsdfsd";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    
+    background-color: #efefef;
+
+} */
+
+
+
+
+
+/* styling of home section */
+
+
+.home{
+    height: 100vh;
+    
+}
+
+.home .carousel{
+    height: 100%;
+    position: relative !important;
+    
+}
+
+.home  .carousel .indicators{
+    position: absolute !important;
+    left: 0;
+    top:50%;
+    width: 50px;
+    height: 50px; 
+    border:2px solid white;
+    transition: background-color 1s;
+}
+
+
+.home  .carousel .next{
+    transform: translateY(-50%);
+}    
+ 
+
+.home  .carousel .prev {
+    transform: translateY(50%);
+}   
+   
+    
+
+.home  .carousel .prev:hover , .home  .carousel .next:hover{
+    background-color: rgb(206, 196, 196);
+    
+    /* rgb(0, 255, 64) */
+}
+
+
+.home .carousel .carousel-inner
+{
+    height: 100%;
+   
+}
+
+.home .carousel .carousel-inner .item-1
+{
+    background-image: url(../Img/bg-image-28.jpg);
+    background-size: cover;
+    background-position: left top ;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.home .carousel .carousel-inner .item-2 {
+    background-image: url(../Img/bg-image-29.jpg);
+    background-size: cover;
+    background-position:center center ;
+    width: 100%;
+    height: 100%;
+}
+
+.home .carousel .carousel-inner .item-1 .overlay , .home .carousel .carousel-inner .item-2 .overlay{
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+}
+
+
+.home .carousel .carousel-inner .overlay .caption h1{
+
+    
+    font-size: 5rem;
+    font-weight: 900;
+    animation-name: head-anim ;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite ;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    opacity: 0;
+    transform: scale(.9);
+} 
+
+
+
+@keyframes head-anim{
+
+    0%{
+        
+        opacity: 0;
+        color: transparent;
+    }
+
+  
+
+    50%{
+
+        opacity: .5;
+        transform: scale(1.1);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1.1);
+
+    }
+
+
+}
+
+
+.home .carousel .carousel-inner .overlay .caption h4{
+    
+
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+
+/* styling of who-we-are section */
+
+.who-we-are{
+    padding:100px 0;
+    border-bottom: solid 1px #eee;
+    
+    
+}
+
+
+.who-we-are p{
+    line-height: 2;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    
+}
+
+
+
+.who-we-are p span::after{
+    content: " ";
+    animation-name: omar-anim;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    /* animation-direction */
+    animation-timing-function:linear; 
+    color:#00c3da;
+}
+
+@keyframes omar-anim{
+
+    0%{
+        content:"a|";
+    }
+
+    2%{
+        content:"ap|";
+    }
+
+    4%{
+        content:"app|";
+    }
+
+    6%{
+        content:"apps|";
+    }
+    8%{
+        content:"apps|";
+    }
+    9%{
+        content:"apps|";
+    }
+
+    10%{
+        content:"apps|";
+    }
+
+    11%{
+        content:"apps|";
+    }
+
+    12%{
+        content:"apps|";
+    }
+
+    14%{
+        content:"app|";
+    }
+
+    16%{
+        content:"ap|";
+    }
+
+    18%{
+        content:"a|";
+    }
+
+    20%{
+        content:"|";
+    }
+
+    22%{
+        content:"w|";
+    }
+
+    24%{
+        content:"wi|";
+    }
+
+    26%{
+        content:"wib|";
+    }
+
+    28%{
+        content:"wibs|";
+    }
+
+    30%{
+        content:"wibsi|";
+    }
+
+    32%{
+        content:"wibsit|";
+    }
+
+    34%{
+        content:"wibsite|";
+    }
+
+    36%{
+        content:"wibsites|";
+    }
+
+    37%{
+        content:"wibsites|";
+    }
+
+    38%{
+        content:"wibsites|";
+    }
+
+    39%{
+        content:"wibsites|";
+    }
+
+    40%{
+        content:"wibsites|";
+    }
+
+    42%{
+        content:"wibsites|";
+    }
+
+    44%{
+        content:"wibsite|";
+    }
+
+    46%{
+        content:"wibsit|";
+    }
+
+    48%{
+        content:"wibsi|";
+    }
+
+    50%{
+        content:"wibs|";
+    }
+
+    52%{
+        content:"wib|";
+    }
+
+    54%{
+        content:"wi|";
+    }
+
+    56%{
+        content:"w|";
+    }
+
+    58%{
+        content:"|";
+    }
+
+    60%{
+        content:"s|";
+    }
+
+    62%{
+        content:"so|";
+    }
+
+    64%{
+        content:"sof|";
+    }
+
+    66%{
+        content:"soft|";
+    }
+
+    68%{
+        content:"softw|";
+    }
+
+    70%{
+        content:"softwa|";
+    }
+
+    72%{
+        content:"softwar|";
+    }
+
+    74%{
+        content:"software|";
+    }
+
+    75%{
+        content:"softwares|";
+    }
+
+    76%{
+        content:"softwares|";
+    }
+
+    77%{
+        content:"softwares|";
+    }
+
+    78%{
+        content:"softwares|";
+    }
+
+    80%{
+        content:"softwar|";
+    }
+
+    82%{
+        content:"softwa|";
+    }
+
+    84%{
+        content:"softw|";
+    }
+
+    86%{
+        content:"soft|";
+    }
+
+    88%{
+        content:"sof|";
+    }
+
+    90%{
+        content:"so|";
+    }
+
+    92%{
+        content:"s|";
+    }
+
+    94%{
+        content:"|";
+    }
+
+    96%{
+        content:"";
+    }
+
+    98%{
+        content:"|";
+    }
+
+    100%{
+        content:"|";
+    }
+
+}
+
+
+.who-we-are a{
+    font-size: .8rem;
+    border-radius:unset ;
+    border-color: #eee;
+}
+
+
+
+
+/* styling of creative team section  */
+
+.creative-team{
+    padding:100px 0;
+}
+
+.titles h2{
+
+    color: #eee;
+    font-size: 5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.titles h2::after {
+    content: "Creative Team";
+    position: absolute;
+    color:black;
+    font-size: 2.5rem;
+    font-weight:900 ;
+    transform: translateY(-25%);
+
+}
+
+.titles h5{
+    font-size: 1.1rem;
+    
+}
+
+
+.creative-team .team .team-layer{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:15%;
+    background-color: rgba(0, 195, 218, 0.9);
+    transition: opacity .3s linear , top .3s linear ;
+    opacity: 0;
+}
+
+
+.creative-team .team:hover .team-layer{
+    opacity: 1;
+    top: 0;
+}
+
+
+/* 
+.creative-team .team .team-layer .social-media a{
+   
+    
+} */
+
+
+.creative-team .team .team-layer .social-media a .face
+,.creative-team .team .team-layer .social-media a .twitt
+,.creative-team .team .team-layer .social-media a .linked {
+   
+    transition: color 2s ;
+}
+
+.creative-team .team .team-layer .social-media a:hover .face{
+    color:rgb(0, 68, 255) !important;
+}
+
+.creative-team .team .team-layer .social-media a:hover .twitt{
+    color:rgb(255, 0, 157) !important;
+}
+
+.creative-team .team .team-layer .social-media a:hover .linked{
+    color:rgb(0, 255, 42) !important;
+}
+
+
+.creative-team .team .bio h4{
+    font-size: 1.3rem;
+}
+
+.creative-team .team .bio span{
+    font-size: .9rem;
+}
+
+
+
+/* styling of what we do */
+
+.what-we-do{
+    background-color: #626262;
+    padding: 100px 0;
+}
+
+.what-we-do .items i{
+    color: yellow;
+}
+
+
+.what-we-do .items h4{
+    font-size: 1rem;
+}
+
+
+.what-we-do .titles h2{
+
+    color: rgb(112, 106, 106);
+    font-size: 5rem;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: flex-end; */
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+.what-we-do .titles h2::after {
+    content: "What We Do.";
+    position: absolute;
+    color:#fff;
+    bottom: -3px;
+    left: 7px;
+    font-size: 2.5rem;
+    font-weight:900 ;
+    transform: translateY(-25%);
+
+}
+
+
+.what-we-do .details ul li span {
+
+    font-weight: 600;
+    
+}
+
+
+/* styling of prices */
+
+.prices{
+    padding: 100px 0;
+    background-color: #f7f7f7;
+}
+
+
+.prices .titles h2::after {
+    content: "Cheap Prices";
+
+}
+
+
+.prices .best-val {
+    
+    transform: scale(1.1);
+   
+    
+
+}
+
+.prices .best-val h2{
+    color:#00C3DA;
+}
+
+
+.prices .best-val .parent .spn{
+    font-size:.7rem;
+    background-color: #00C3DA !important ;
+    border-color:#00C3DA !important ;
+}
+
+
+.prices .price-child h4{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.prices .price-child h2{
+    font-size: 3.5rem;
+    font-weight: 800;
+    position: relative;
+    left: 10px;
+    
+    
+    
+}
+
+.prices .price-child h2::before{
+    position: absolute;
+    content: "$";
+    font-size: 1.3rem;
+    font-weight: 500;
+    top:-15px;
+    left:-10px;
+}
+
+.prices .price-child .line{
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+}
+
+
+.bg{
+
+    background-color: #00c3da ;
+    border-color: #00c3da;
+}
+
+
+
+/* style of testimonial  */
+
+.testimonial{
+    background-color: #F7F7F7;
+    padding: 100px 0;
+}
+
+.testimonial ol li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00c3da;
+    
+}
+
+.testimonial .carousel-inner {
+    padding:80px 60px 60px 60px;
+    
+}
+
+
+.testimonial .carousel-inner .carousel-item{
+    background-color: white;
+    
+
+}
+
+.testimonial .carousel-inner .carousel-item img{
+    display: inline-block !important;
+    width: 20%;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+/* styling of contact-us  */
+
+
+.contact-us .titles h2{
+
+    color: #eee;
+    font-size: 5rem;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.contact-us .titles h2::after {
+    content: "Get In Touch";
+    position: absolute;
+    color:black;
+    font-size: 2.5rem;
+    font-weight:900 ;
+    transform: translateY(-25%);
+
+}
+
+
+.contact-us .inputs{
+    padding:70px 0 0 50px;
+}
